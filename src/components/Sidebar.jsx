@@ -14,6 +14,23 @@ export default function Sidebar() {
         <li><Link to="/" style={{ color: "white" }}>Dashboard</Link></li>
         <li><Link to="/settings" style={{ color: "white" }}>Settings</Link></li>
         <li><Link to="/login" style={{ color: "white" }}>Login</Link></li>
+        <li>
+  <button
+    style={{
+      marginTop: "20px",
+      width: "100%",
+      padding: "10px",
+      cursor: "pointer",
+    }}
+    onClick={() => {
+      localStorage.removeItem("token");
+      window.location.href = "/login";
+    }}
+  >
+    Logout
+  </button>
+</li>
+
       </ul>
     </div>
   );
