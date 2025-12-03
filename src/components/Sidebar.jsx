@@ -30,7 +30,7 @@ export default function Sidebar() {
     Logout
   </button>
 </li>
-
+<li><Link to="/activity" style={{ color: "white" }}>Activity</Link></li>
       </ul>
     </div>
   );
